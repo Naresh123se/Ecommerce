@@ -3,10 +3,12 @@ import Menu from "./Menu";
 import Link from "next/link";
 import SearchBar from "./SearchBar";
 import NavIcons from "./NavIcons";
+import Wrap from "./Wrap/Wrap";
 
 const Nav = () => {
   return (
-    <div className="h-20 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 relative ">
+    <Wrap>
+    <div className="h-20 ">
       {/* Mobile */}
       <div className="h-full flex items-center justify-between md:hidden">
         <div className="text-2xl">
@@ -32,6 +34,7 @@ const Nav = () => {
         </div>
       </div>
     </div>
+    </Wrap>
   );
 };
 

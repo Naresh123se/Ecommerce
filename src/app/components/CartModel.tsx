@@ -4,7 +4,7 @@ import Image from "next/image";
 const CartModel = () => {
   const cartItems = true;
   return (
-    <div className="w-max absolute p-4    top-10 shadow-black bg-slate-100 flex flex-col rounded-md right-0 text-sm  ">
+    <div className="w-max absolute p-4    top-10 shadow-black bg-slate-100 flex flex-col rounded-md right-0 text-sm  z-10 ">
       {!cartItems ? (
         <div>Cart is empty</div>
       ) : (
