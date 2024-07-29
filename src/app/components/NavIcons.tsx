@@ -35,8 +35,8 @@ const NavIcons = () => {
       )}
       <NotificationsNoneIcon className="cursor-pointer" />
 
-      <div className="relative cursor-pointer">
-        <ShoppingCartIcon onClick={() => setIsCartOpen((prev) => !prev)} />
+      <div className="relative cursor-pointer "  onClick={() => setIsCartOpen((prev) => !prev)}>
+        <ShoppingCartIcon  />
         <div className="absolute -top-4 -right-4 w-6 h-6 bg-primary rounded-full text-white flex text-sm items-center justify-center">
           1
         </div>
