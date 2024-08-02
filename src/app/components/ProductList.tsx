@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const gitProductList = () => {
+const ProductList = () => {
   return (
     <div className='flex gap-x-8 gap-y-16 justify-between flex-wrap mt-6'>
         <Link href='/' className='w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]' >

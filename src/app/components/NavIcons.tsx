@@ -25,18 +25,18 @@ const NavIcons = () => {
       <AccountCircleIcon
         className="cursor-pointer"
         onClick={handleProfile}
-        // onClick={() => setIsProfileOpen((prev) => !prev)}
+      // onClick={() => setIsProfileOpen((prev) => !prev)}
       />
       {isProfileOpen && (
-        <div className="absolute p-3 rounded-md top-10 left-0 text-sm bg-slate-200 z-20  ">
+        <div className="absolute p-3 rounded-md top-10 left-0 text-sm bg-slate-200 z-10  ">
           <Link href="/">Profile</Link>
           <div className="mt-2 cursor-pointer">logOut</div>
         </div>
       )}
       <NotificationsNoneIcon className="cursor-pointer" />
 
-      <div className="relative cursor-pointer "  onClick={() => setIsCartOpen((prev) => !prev)}>
-        <ShoppingCartIcon  />
+      <div className="relative cursor-pointer " onClick={() => setIsCartOpen((prev) => !prev)}>
+        <ShoppingCartIcon />
         <div className="absolute -top-4 -right-4 w-6 h-6 bg-primary rounded-full text-white flex text-sm items-center justify-center">
           1
         </div>
